@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F3E8FF; /* Fondo pastel */
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Pequeña animación al pasar el mouse */
+}
+
+h1 {
+    font-size: 24px;
+    color: #7D5BA6; /* Color de título pastel */
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #C8B6E2;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #F9F4FF;
+    color: #4E4E4E;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #A084CA; /* Color de borde al hacer clic */
+}
+
+button {
+    background-color: #A084CA; /* Color pastel del botón */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7D5BA6; /* Color del botón al pasar el mouse */
+}
+
+.resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #7D5BA6; /* Color de resultado */
+}
+
+.error {
+    color: #FF6B6B; /* Color rojo pastel para los errores */
+    font-size: 14px;
+    margin-top: 5px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Suma</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Suma</h1>
+        
+        <div>
+            <label for="num1">Primer número:</label>
+            <input type="text" id="num1" placeholder="Ingresa el primer número" oninput="validarNumero(this, 'error1')">
+            <small id="error1" class="error"></small> <!-- Mensaje de error -->
+        </div>
+        
+        <div>
+            <label for="num2">Segundo número:</label>
+            <input type="text" id="num2" placeholder="Ingresa el segundo número" oninput="validarNumero(this, 'error2')">
+            <small id="error2" class="error"></small> <!-- Mensaje de error -->
+        </div>
+        
+        <button onclick="sumar()">Sumar</button>
+        
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
